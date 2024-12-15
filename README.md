@@ -1,7 +1,7 @@
-# Shopping Cart Task Heml & React Version
+# Shopping Cart Task Html & React Version
 
-HTML Version: [Live Link](https://shopping-cart-html-version.netlify.app/)
-React Version: [Live Link](https://shopping-cart-react-version.netlify.app/)
+### HTML Version: [Live Link](https://shopping-cart-html-version.netlify.app/)
+### React Version: [Live Link](https://shopping-cart-react-version.netlify.app/)
 
 ## Setup For Only React Project
 
