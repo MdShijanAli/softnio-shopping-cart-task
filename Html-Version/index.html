@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+
+    <div class="flex justify-center items-center h-[100vh] relative">
+      <div class="grid md:grid-cols-2 gap-14 border w-[1320px] h-[720px] items-center mx-6 md:mx-0">
+        <div>
+          <img id="product-image" class="w-full h-full overflow-hidden" src="assets/images/product-gallery.png"
+            alt="" />
+        </div>
+        <div>
+          <h1 class="text-[40px] font-semibold">Classy Modern Smart watch</h1>
+          <span class="flex items-center gap-2 mt-2">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.9633 5.75627C14.874 5.48702 14.6438 5.28827 14.3625 5.24627L14.3588 5.24552L10.0845 4.62077L8.17275 0.74777C8.03475 0.51602 7.785 0.36377 7.5 0.36377C7.215 0.36377 6.966 0.51602 6.8295 0.74402L6.82725 0.74777L4.9155 4.62077L0.64125 5.24552C0.276 5.30027 0 5.61152 0 5.98802C0 6.19877 0.087 6.38852 0.2265 6.52502L3.3195 9.53777L2.58975 13.7925C2.583 13.8308 2.57925 13.8743 2.57925 13.9193C2.57925 14.3333 2.91525 14.6693 3.32925 14.6693C3.45675 14.6693 3.5775 14.637 3.6825 14.5808L3.67875 14.583L7.50075 12.5723L11.3228 14.583C11.424 14.637 11.544 14.6693 11.6723 14.6693C12.0863 14.6693 12.4223 14.3333 12.4223 13.9193C12.4223 13.8743 12.4185 13.8308 12.411 13.788L12.4118 13.7925L11.682 9.53777L14.775 6.52502C14.9145 6.38852 15.0015 6.19877 15.0015 5.98802C15.0015 5.90552 14.988 5.82527 14.9633 5.75102L14.9648 5.75627H14.9633Z"
+                fill="#FFD200" />
+            </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.9633 5.75627C14.874 5.48702 14.6438 5.28827 14.3625 5.24627L14.3588 5.24552L10.0845 4.62077L8.17275 0.74777C8.03475 0.51602 7.785 0.36377 7.5 0.36377C7.215 0.36377 6.966 0.51602 6.8295 0.74402L6.82725 0.74777L4.9155 4.62077L0.64125 5.24552C0.276 5.30027 0 5.61152 0 5.98802C0 6.19877 0.087 6.38852 0.2265 6.52502L3.3195 9.53777L2.58975 13.7925C2.583 13.8308 2.57925 13.8743 2.57925 13.9193C2.57925 14.3333 2.91525 14.6693 3.32925 14.6693C3.45675 14.6693 3.5775 14.637 3.6825 14.5808L3.67875 14.583L7.50075 12.5723L11.3228 14.583C11.424 14.637 11.544 14.6693 11.6723 14.6693C12.0863 14.6693 12.4223 14.3333 12.4223 13.9193C12.4223 13.8743 12.4185 13.8308 12.411 13.788L12.4118 13.7925L11.682 9.53777L14.775 6.52502C14.9145 6.38852 15.0015 6.19877 15.0015 5.98802C15.0015 5.90552 14.988 5.82527 14.9633 5.75102L14.9648 5.75627H14.9633Z"
+                fill="#FFD200" />
+            </svg>
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.9633 5.75627C14.874 5.48702 14.6438 5.28827 14.3625 5.24627L14.3588 5.24552L10.0845 4.62077L8.17275 0.74777C8.03475 0.51602 7.785 0.36377 7.5 0.36377C7.215 0.36377 6.966 0.51602 6.8295 0.74402L6.82725 0.74777L4.9155 4.62077L0.64125 5.24552C0.276 5.30027 0 5.61152 0 5.98802C0 6.19877 0.087 6.38852 0.2265 6.52502L3.3195 9.53777L2.58975 13.7925C2.583 13.8308 2.57925 13.8743 2.57925 13.9193C2.57925 14.3333 2.91525 14.6693 3.32925 14.6693C3.45675 14.6693 3.5775 14.637 3.6825 14.5808L3.67875 14.583L7.50075 12.5723L11.3228 14.583C11.424 14.637 11.544 14.6693 11.6723 14.6693C12.0863 14.6693 12.4223 14.3333 12.4223 13.9193C12.4223 13.8743 12.4185 13.8308 12.411 13.788L12.4118 13.7925L11.682 9.53777L14.775 6.52502C14.9145 6.38852 15.0015 6.19877 15.0015 5.98802C15.0015 5.90552 14.988 5.82527 14.9633 5.75102L14.9648 5.75627H14.9633Z"
+                fill="#FFD200" />
+            </svg>
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.982 7.87254C16.9377 7.73829 16.8222 7.63854 16.6812 7.61754H16.679L12.2097 6.96429L10.2237 2.94129C10.1825 2.70729 10.0362 2.51454 9.83598 2.41104L9.83223 2.40879C9.73548 2.36004 9.62148 2.33154 9.50073 2.33154C9.20748 2.33154 8.95398 2.49954 8.83023 2.74479L8.82798 2.74929L6.91623 6.62154L2.64198 7.24629C2.27673 7.30104 2.00073 7.61229 2.00073 7.98879C2.00073 8.19954 2.08773 8.38929 2.22723 8.52579L5.32023 11.5385L4.59048 15.7933C4.58373 15.8315 4.57998 15.875 4.57998 15.92C4.57998 16.334 4.91598 16.67 5.32998 16.67C5.45748 16.67 5.57823 16.6378 5.68323 16.5815L5.67948 16.5838L9.85098 14.39C9.92448 14.348 9.98673 14.2963 10.0392 14.2363L10.04 14.2355L13.8732 16.2515C13.9235 16.2785 13.9842 16.2943 14.048 16.2943C14.255 16.2943 14.423 16.1263 14.423 15.9193C14.423 15.8968 14.4207 15.875 14.417 15.854V15.8563L13.6535 11.4065L16.8867 8.25654C16.9565 8.18829 17 8.09304 17 7.98804C17 7.94679 16.9932 7.90704 16.9812 7.87029L16.982 7.87329V7.87254ZM12.9882 11.0068C12.9177 11.075 12.8742 11.171 12.8742 11.276C12.8742 11.2978 12.8765 11.3195 12.8795 11.3405V11.3383L13.5477 15.233L10.19 13.4668L9.82323 13.0078L9.49923 4.77429L9.68373 3.55254L11.624 7.47129C11.678 7.58004 11.7815 7.65804 11.9037 7.67604H11.906L15.8187 8.24754L12.9882 11.0068Z"
+                fill="#FFD200" />
+            </svg>
+            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.1715 14.6692C12.044 14.6692 11.9233 14.637 11.8183 14.5815L11.822 14.5837L8.00002 12.573L4.17802 14.5837C4.07677 14.6377 3.95677 14.67 3.82852 14.67C3.41452 14.67 3.07852 14.334 3.07852 13.92C3.07852 13.875 3.08227 13.8315 3.08977 13.7887L3.08902 13.7932L3.81877 9.53848L0.725768 6.52573C0.586268 6.38924 0.499268 6.19948 0.499268 5.98873C0.499268 5.61298 0.776018 5.30098 1.13677 5.24698L1.14127 5.24623L5.41552 4.62148L7.32727 0.749234C7.46527 0.517484 7.71502 0.365234 8.00002 0.365234C8.28502 0.365234 8.53402 0.517484 8.67052 0.745484L8.67277 0.749234L10.5845 4.62223L14.8588 5.24698C15.224 5.30173 15.5 5.61298 15.5 5.98948C15.5 6.20023 15.413 6.38998 15.2735 6.52648L12.1805 9.53923L12.9103 13.794C12.917 13.8322 12.9208 13.8765 12.9208 13.9207C12.9208 14.3347 12.5855 14.6692 12.1715 14.6692ZM8.00002 10.9755C8.12752 10.9755 8.24827 11.007 8.35327 11.0632L8.34952 11.061L11.1755 12.5475L10.6363 9.40198C10.6295 9.36373 10.6258 9.31948 10.6258 9.27523C10.6258 9.06523 10.712 8.87473 10.8515 8.73823L13.139 6.51073L9.97777 6.04873C9.72877 6.01123 9.52327 5.85673 9.41602 5.64298L9.41377 5.63848L8.00002 2.77498L6.58627 5.63848C6.47677 5.85598 6.27127 6.01123 6.02677 6.04798L6.02227 6.04873L2.86102 6.51073L5.14852 8.73823C5.28802 8.87473 5.37502 9.06448 5.37502 9.27523C5.37502 9.32023 5.37127 9.36448 5.36377 9.40648L5.36452 9.40198L4.82527 12.5475L7.65127 11.061C7.75252 11.007 7.87252 10.9755 8.00002 10.9755Z"
+                fill="#FFD200" />
+            </svg>
+            <span class="text-[14px]">( 2 Reviews )</span>
+          </span>
+
+          <div class="flex gap-3 items-center my-5">
+            <span class="line-through text-[20px] text-[#8091A7]">$99.00</span>
+            <span class="text-[24px] text-[#6576FF] font-semibold">$79.00</span>
+          </div>
+
+          <p class="text-[18px] my-5">
+            I must explain to you how all this mistaken idea of denoun cing ple praising pain was born and I will give
+            you a complete account of the system, and expound the actual teaching.
+          </p>
+
+          <div class="flex gap-10">
+            <div>
+              <p class="text-[14px] text-[#8091A7]">Type</p>
+              <p class="text-[16px] text-[#364A63] font-semibold">Watch</p>
+            </div>
+            <div>
+              <p class="text-[14px] text-[#8091A7]">Model Number</p>
+              <p class="text-[16px] text-[#364A63] font-semibold">Forerunner 290XT</p>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <h4 class="text-[18px] text-[#364A63] font-semibold">Brand Color</h4>
+
+            <div class="flex items-center gap-3 mt-2">
+              <div
+                class="color-item w-[24px] h-[24px] rounded-full flex justify-center items-center border-2 border-[#816BFF]">
+                <div class="w-[16px] h-[16px] rounded-full cursor-pointer bg-[#816BFF]">
+                </div>
+              </div>
+              <div class="color-item w-[24px] h-[24px] rounded-full flex justify-center items-center border-[#4B97D3]">
+                <div class="w-[16px] h-[16px] rounded-full cursor-pointer bg-[#4B97D3]">
+                </div>
+              </div>
+              <div class="color-item w-[24px] h-[24px] rounded-full flex justify-center items-center border-[#3B4747]">
+                <div class="w-[16px] h-[16px] rounded-full cursor-pointer bg-[#3B4747]">
+                </div>
+              </div>
+              <div class="color-item w-[24px] h-[24px] rounded-full flex justify-center items-center border-[#1FCEC9]">
+                <div class="w-[16px] h-[16px] rounded-full cursor-pointer bg-[#1FCEC9]">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-5">
+            <h4 class="text-[18px] text-[#364A63] font-semibold">Wrist Size</h4>
+
+            <div class="flex gap-2 mt-2 cursor-pointer">
+
+              <div class="size-item px-3 py-1 inline-block border border-[#6576FF]">
+                <span class="text-[13px] text-[#6576FF] font-semibold">S</span>
+                <span class="ml-2 text-[#8091A7] text-[13px] font-semibold">$69</span>
+              </div>
+              <div class="size-item px-3 py-1 inline-block border">
+                <span class="text-[13px] text-[#6576FF] font-semibold">M</span>
+                <span class="ml-2 text-[#8091A7] text-[13px] font-semibold">$79</span>
+              </div>
+              <div class="size-item px-3 py-1 inline-block border">
+                <span class="text-[13px] text-[#6576FF] font-semibold">L</span>
+                <span class="ml-2 text-[#8091A7] text-[13px] font-semibold">$89</span>
+              </div>
+              <div class="size-item px-3 py-1 inline-block border">
+                <span class="text-[13px] text-[#6576FF] font-semibold">XL</span>
+                <span class="ml-2 text-[#8091A7] text-[13px] font-semibold">$99</span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-3">
+            <div class="flex items-center border border-gray-300 rounded">
+              <button onclick="decrement()" class="px-2 py-1 border-r hover:bg-gray-100">
+                –
+              </button>
+              <input id="quantity" class="px-3 py-1 w-10 text-center" min="0" value="0" />
+              <button onclick="increment()" class="px-2 py-1 border-l hover:bg-gray-100">
+                +
+              </button>
+            </div>
+
+            <button onclick="addToCart()" class="px-4 py-1 bg-indigo-500 text-white rounded hover:bg-indigo-600">
+              Add to Cart
+            </button>
+
+            <button>
+              <LoveIcon class="text-2xl text-gray-400 hover:text-red-500" />
+            </button>
+          </div>
+
+          <button id="checkoutButton"
+            class="hidden mt-10 flex items-center justify-between w-[139px] h-[42px] bg-[#FFBB5A] font-semibold rounded-[20px] px-[24px] py-[8px] gap-[10px]">
+            <span class="text-[#364A63] text-[16px]">Checkout</span>
+            <div class="flex items-center justify-center w-[19px] h-[20px] bg-white rounded-[5px] px-[6px] py-[2px]">
+              <span id="cartCount" class="text-black text-[12px]"></span>
+            </div>
+          </button>
+
+
+          <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+            <div id="modal-content"
+              class="bg-white rounded-lg p-6 w-[650px] relative p-6 rounded-lg shadow-lg transform scale-75 opacity-0 transition-all duration-300">
+              <button onclick="onClose()" class="absolute top-2 right-2 text-gray-400 hover:text-gray-600 text-2xl">
+                &times;
+              </button>
+
+              <h1 class="text-2xl font-semibold mb-4">Your Cart</h1>
+
+              <table class="w-full border-collapse text-[14px">
+                <thead>
+                  <tr class="border-b text-[#8091A7] font-normal">
+                    <th class="text-left pb-2">Item</th>
+                    <th class="text-center pb-2">Color</th>
+                    <th class="text-center pb-2">Size</th>
+                    <th class="text-right pb-2">Qnt</th>
+                    <th class="text-right pb-2">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b text-[#364A63]">
+                    <td class="py-3">
+                      <div class="flex items-center">
+                        <img src="./assets/images/lg-a 3.png" alt="Product" class="w-10 h-10 rounded" />
+                        <span class="ml-2 text-gray-700">Classy Modern Smart watch</span>
+                      </div>
+                    </td>
+                    <td class="text-center">Black</td>
+                    <td class="text-center font-bold">XL</td>
+                    <td class="text-right">1</td>
+                    <td class="text-right font-semibold">$99.99</td>
+                  </tr>
+                  <tr class="border-b text-[#364A63]">
+                    <td class="py-3">
+                      <div class="flex items-center">
+                        <img src="./assets/images/product-gallery.png" alt="Product" class="w-10 h-10 rounded" />
+                        <span class="ml-2 text-gray-700">Classy Modern Smart watch</span>
+                      </div>
+                    </td>
+                    <td class="text-center">Purple</td>
+                    <td class="text-center font-bold">L</td>
+                    <td class="text-right">2</td>
+                    <td class="text-right font-semibold">$178.99</td>
+                  </tr>
+                  <tr class="border-b text-[#364A63]">
+                    <td class="py-3">
+                      <div class="flex items-center">
+                        <img src="./assets/images/cyan.png" alt="Product" class="w-10 h-10 rounded" />
+                        <span class="ml-2 text-gray-700">Classy Modern Smart watch</span>
+                      </div>
+                    </td>
+                    <td class="text-center">Cyan</td>
+                    <td class="text-center font-bold">M</td>
+                    <td class="text-right">1</td>
+                    <td class="text-right font-semibold">$79.99</td>
+                  </tr>
+                </tbody>
+
+                <tfoot>
+                  <tr class="text-[#373737] text-[22px]">
+                    <td colSpan="3" class="text-left font-bold pt-3">Total</td>
+                    <td class="text-right font-bold text-lg pt-4">4</td>
+                    <td class="text-right font-bold text-lg pt-4">$356.00</td>
+                  </tr>
+                </tfoot>
+              </table>
+
+              <div class="flex justify-end gap-5 items-center mt-6">
+                <button
+                  class="text-indigo-500 border border-indigo-500 rounded px-4 py-2 hover:bg-indigo-500 hover:text-white transition"
+                  onclick="onClose()">
+                  Continue Shopping
+                </button>
+                <button
+                  class="bg-indigo-500 text-white rounded px-4 py-2 hover:bg-indigo-600 transition flex items-center gap-3 cursor-pointer"
+                  onclick="onSubmit()">
+                  <svg id="loader" class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
+                  </svg>
+                  <span>Checkout</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div id="successMessage" class="hidden">
+        <div class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div class="bg-white p-6 rounded shadow-lg">
+            <p class="text-2xl font-semibold mb-4">Checkout Successful!</p>
+            <p class="text-lg">Your order has been placed successfully.</p>
+            <button class="mt-4 bg-indigo-500 text-white rounded px-4 py-2 hover:bg-indigo-600 transition"
+              onclick="successClose()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+
+</html>
